@@ -117,5 +117,6 @@ public class Practica1 {
                 }
             } while (comprobar != true);
         } while (operacion.equals("s") || operacion.equals("S"));
+        System.out.println("");
     }
 }
