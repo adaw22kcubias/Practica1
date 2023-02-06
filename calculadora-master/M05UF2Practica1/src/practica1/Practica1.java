@@ -29,6 +29,7 @@ public class Practica1 {
                 System.out.println("\n Introdueix el primer numero. ");
                 numero1 = sc.nextLine();
             } while (!numero1.matches("[+-]?[\\d]*[.]?[\\d]+"));
+            
             double nume1 = Double.parseDouble(numero1);
             double n1 = new Double(numero1);
 
@@ -52,6 +53,7 @@ public class Practica1 {
                 System.out.println("\n Introdueix el segon numero.");
                 numero2 = sc.nextLine();
             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
+            
             double nume2 = Double.parseDouble(numero2);
             double n2 = new Double(numero2);
 
@@ -72,11 +74,11 @@ public class Practica1 {
                         while (n2 == 0) {
                             do {
                                 System.err.println(" Al denominador hi ha un zero \n"
-                                        + "per a  evitar errors coloca un altre valor.");
+                                    + "per a  evitar errors coloca un altre valor.");
                                 numero2 = sc.nextLine();
                             } while (!numero2.matches("[+-]?[\\d]*[.]?[\\d]+"));
                             nume2 = Double.parseDouble(numero2);
-                            n2 = new Double(numero2);
+                            n2 = new Double(numero2);    
                         }
                         res = n1 / n2;
                         break;
